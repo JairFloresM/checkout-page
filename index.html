@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/devchallenges.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <title>Checkout Page</title>
+</head>
+<body>
+
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <main>
+        <section class="purchase">
+            <article class="purchase-products">
+                <div class="product-item">
+                    <img src="img/photo1.png" alt="BackPack">
+                    <div class="product-item-body">
+                        <h4 class="product-item-title">Vintage Backbag</h4>
+                        <p>
+                            <span>$54.99</span>
+                            <span>$94.99</span>
+                        </p>
+                        <div class="product-cant">
+                            <div class="add" >
+                                <span class="material-icons" id="remove1">
+                                    remove
+                                </span>
+                            </div>
+                            <div class="cant" id="cant1">1</div>
+                            <div class="remove">
+                                <span class="material-icons" id="add1">
+                                    add
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="img/photo2.png" alt="BackPack">
+                    <div class="product-item-body">
+                        <h4 class="product-item-title">Levi Shoes</h4>
+                        <p>
+                            <span>$74.99</span>
+                            <span>$124.99</span>
+                        </p>
+                        <div class="product-cant">
+                            <div class="add" >
+                                <span class="material-icons" id="remove2">
+                                    remove
+                                </span>
+                            </div>
+                            <div class="cant" id="cant2">1</div>
+                            <div class="remove">
+                                <span class="material-icons" id="add2">
+                                    add
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="purchase-total">
+                <hr>
+                <div>
+                    <h3>Shipping</h3>
+                    <span>$19</span>
+                </div>
+                <hr>
+                <div>
+                    <h3>Total</h3>
+                    <span id="total">0</span>
+                </div>
+            </article>
+        </section>
+        <section class="form-info">
+            <form id="form" novalidate>
+                <div class="contact-info">
+                    <h3>Contact information</h3>
+                    <div class="form-group">
+                        <h6>E-mail</h6>
+                        <div class="group-input">
+                            <span class="material-icons">
+                                email
+                            </span>
+                            <input type="email" name="email" placeholder="Enter your email..">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h6>Phone</h6>
+                        <div class="group-input">
+                            <span class="material-icons">
+                                call
+                            </span>
+                            <input type="text" name="phone" placeholder="0000-0000">
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping-address">
+                    <h3>Shipping address</h3>
+                    <div class="form-group">
+                        <h6>Full name</h6>
+                        <div class="group-input">
+                            <span class="material-icons">
+                                account_circle
+                            </span>
+                            <input type="text" name="name" placeholder="Your name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h6>Address</h6>
+                        <div class="group-input">
+                            <span class="material-icons">
+                                home
+                            </span>
+                            <input type="text" name="address" placeholder="Your address..">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h6>City</h6>
+                        <div class="group-input">
+                            <span class="material-icons">
+                                location_city
+                            </span>
+                            <input type="text" name="city" placeholder="Your city..">
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="form-group">
+                            <h6>Country</h6>
+                            <div class="group-input">
+                                <span class="material-icons">
+                                    public
+                                </span>
+                                <select name="country">
+                                    <option disabled selected value="0">Your Country</option>
+                                    <option value="1">United States</option>
+                                    <option value="2">Mexico</option>
+                                    <option value="3">Panama</option>
+                                    <option value="4">Canada</option>
+                                </select>
+                                <span class="material-icons i">
+                                    expand_more
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h6>Postal code</h6>
+                            <div class="group-input">
+                                <span class="material-icons">
+                                    markunread_mailbox
+                                </span>
+                                <input type="text" name="zip" placeholder="Your postal code..">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group save">
+                    <input type="checkbox" name="save-info" id="save-info">
+                    <label for="save-info">Save this information for next time</label>
+                </div>
+
+                <button type="submit" class="btn" id="btn">
+                    Continue
+                </button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>created by <span>JairFloresM</span> - devChallenges.io</p>
+    </footer>
+
+    <div class="confirmationMsg activeMsg">
+        <span class="material-icons">
+            check_circle_outline
+        </span>
+        <h3>message sent successfully</h3>
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
